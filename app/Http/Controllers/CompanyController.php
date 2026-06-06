@@ -22,6 +22,7 @@ class CompanyController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
+            'email' => 'nullable|email|max:255',
             'designation' => 'required|string|max:255',
             'apply_date' => 'required|date',
             'status' => 'required|string|in:pending,applied,rejected,accepted',
@@ -45,6 +46,7 @@ class CompanyController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
+            'email' => 'nullable|email|max:255',
             'designation' => 'required|string|max:255',
             'apply_date' => 'required|date',
             'status' => 'required|string|in:pending,applied,rejected,accepted',

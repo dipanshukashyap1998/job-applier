@@ -11,5 +11,6 @@ class Company extends Model
         'designation',
         'apply_date',
         'status',
+        'email',
     ];
 }

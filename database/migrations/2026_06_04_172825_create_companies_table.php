@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
+            $table->string('email')->nullable();
             $table->string('designation')->nullable();
             $table->date('apply_date')->nullable();
             $table->string('status')->default('pending');
